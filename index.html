@@ -16,12 +16,12 @@
     t.src='https://connect.facebook.net/en_US/fbevents.js';
     s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script');
-    fbq('init', '1547756819698121');
+    fbq('init', '25443296028622372');
     fbq('track', 'PageView');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1547756819698121&ev=PageView&noscript=1"/>
+      src="https://www.facebook.com/tr?id=25443296028622372&ev=PageView&noscript=1"/>
   </noscript>
   <!-- End Meta Pixel Code -->
 
@@ -29,8 +29,8 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0c0c0c;
-      color: #fff;
+      background: linear-gradient(to bottom right, #e8fff3, #c1f2e1);
+      color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -43,16 +43,16 @@
     }
 
     .logo-text {
-      color: #d4af37;
+      color: #00c853;
       font-weight: 800;
       font-size: 28px;
-      text-shadow: 1px 1px 3px #000;
+      text-shadow: 1px 1px 2px #00000022;
     }
 
     hr {
       width: 100%;
       border: none;
-      border-top: 1px solid #333;
+      border-top: 1px solid #ddd;
       margin: 20px 0;
     }
 
@@ -68,11 +68,10 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
-      color: #fff;
     }
 
     .verified .green {
-      color: #d4af37;
+      color: #00b86b;
       font-weight: 700;
       font-size: 18px;
     }
@@ -88,130 +87,93 @@
     }
 
     .message {
-      background: #1b1b1b;
+      background: #d6fff0;
       padding: 18px;
       border-radius: 12px;
       margin: 20px 0;
       font-size: 16px;
       font-weight: 500;
-      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       text-align: center;
     }
 
     .mensaje-bono {
-      background: #2a2a2a;
-      border: 1px solid #d4af37;
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
       padding: 14px;
       border-radius: 10px;
       margin-bottom: 18px;
       font-weight: 600;
-      color: #d4af37;
+      color: #856404;
       font-size: 16px;
       text-align: center;
     }
 
-    /* --- Botón con efecto dorado metálico --- */
     .whatsapp-button {
-      position: relative;
-      background: linear-gradient(135deg, #d4af37, #b88900);
-      color: black;
+      background: linear-gradient(135deg, #00e676, #1de9b6);
+      color: white;
       padding: 20px 34px;
       border-radius: 45px;
       font-weight: bold;
       text-decoration: none;
       display: inline-block;
       font-size: 18px;
-      box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+      box-shadow: 0 0 15px #25d366;
+      animation: pulse-glow 2s infinite, shine 3s infinite;
       transition: transform 0.2s, box-shadow 0.2s;
       text-align: center;
-      overflow: hidden;
     }
 
-    .whatsapp-button::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.3) 0%,
-        rgba(255, 255, 255, 0.8) 50%,
-        rgba(255, 255, 255, 0.3) 100%
-      );
-      transform: skewX(-25deg);
-      animation: shine 3s infinite;
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px #25d366; }
+      50% { box-shadow: 0 0 30px #00ff99; }
     }
 
     @keyframes shine {
-      0% { left: -75%; }
-      50% { left: 125%; }
-      100% { left: 125%; }
+      0% { background-position: -200px; }
+      100% { background-position: 200px; }
     }
 
     .whatsapp-button:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+      box-shadow: 0 0 25px #00ff99;
     }
 
     .clientes {
-      background-color: #1a1a1a;
-      color: #d4af37;
+      background-color: #00c9a7;
+      color: white;
       padding: 12px 20px;
       border-radius: 30px;
       font-weight: 600;
       margin: 14px 0;
       text-align: center;
-      border: 1px solid #d4af37;
     }
 
     .trustpilot {
       font-size: 14px;
       padding: 10px;
-      border: 1px dashed #555;
+      border: 1px dashed #aaa;
       border-radius: 10px;
       margin-bottom: 10px;
       text-align: center;
-      background: #111;
-      color: #d4af37;
+      background: #ffffffaa;
     }
 
     .trustpilot img {
       margin-top: 5px;
       max-width: 130px;
-      filter: brightness(0.9);
     }
 
-    /* --- Footer dorado con brillo animado --- */
     .footer {
       position: fixed;
       bottom: 0;
       width: 100%;
-      background: linear-gradient(135deg, #d4af37, #b88900);
-      color: black;
+      background: linear-gradient(to right, #00d084, #25d366);
+      color: white;
       text-align: center;
-      padding: 14px;
+      padding: 12px;
       font-weight: bold;
       font-size: 15px;
-      overflow: hidden;
-    }
-
-    .footer::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.3) 0%,
-        rgba(255, 255, 255, 0.8) 50%,
-        rgba(255, 255, 255, 0.3) 100%
-      );
-      transform: skewX(-25deg);
-      animation: shine 4s infinite;
     }
 
     .notificacion {
@@ -219,7 +181,7 @@
       bottom: 110px;
       left: 10px;
       background: #222;
-      color: #fff;
+      color: white;
       padding: 8px 12px;
       border-radius: 10px;
       font-size: 11px;
@@ -249,7 +211,6 @@
     }
   </style>
 </head>
-
 <body>
   <header>
     <div class="logo-text">🎰 WhatsApp Bonos</div>
@@ -263,7 +224,7 @@
       ✅ Plataforma Verificada
       <img class="tick" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" alt="Verificado" />
     </h2>
-    <p class="green">"💸 Bono Activo: ¡50% de Bonificación con tu primera carga!"</p>
+    <p class="green">💸 Bono Activo: ¡50% de Bonificación con tu primera carga!</p>
   </section>
 
   <div class="message">
@@ -274,11 +235,11 @@
     💥 Si cargas $2000 te damos $3000 💥<br/>🎯 ¡Aprovechá tu bono del 50%!
   </div>
 
-  <a class="whatsapp-button"
-     href="https://wa.me/5491136068764?text=Hola!%20Quiero%20jugar%20con%20mi%20bono%20del%2050%25"
+  <a class="whatsapp-button" 
+     href="https://wa.me/5491126632818?text=hola%20quiero%20jugar%20con%20mi%20bon0%20del%2050%25"  
      target="_blank"
      onclick="fbq('trackCustom', 'ClickWhatsApp')">
-    📲 ¡QUIERO MI BONO!
+    📲 ¡QUIERO MI BONO DEL 50%!
   </a>
 
   <div class="clientes">
@@ -296,7 +257,7 @@
   </div>
 
   <div class="footer">
-    🎁 ¡BONO ACTIVO — 50% DE BONIFICACIÓN CON TU PRIMERA CARGA!
+    🎁 ¡BONO ACTIVO! — ¡50% DE BONIFICACIÓN CON TU PRIMER CARGA!
   </div>
 
   <script>
